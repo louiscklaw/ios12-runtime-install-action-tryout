@@ -12,14 +12,15 @@ runs:
           gem install xcode-install
           xcversion simulators --install='iOS 12.4'
         shell: bash
+      - name: size of directory
+        run: |
+          du -sh ~/Library/Caches/Homebrew
+        shell: bash
       # - name: size of directory
       #   run: |
       #     du -sh /usr/local/lib/ruby/gems/2.7.0
       #   shell: bash
-      # - name: size of directory
-      #   run: |
-      #     du -sh ~/Library/Caches/Homebrew
-      #   shell: bash
+
 
       # - name: size of directory
       #   run: |
