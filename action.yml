@@ -3,14 +3,14 @@ description: 'Greet someone'
 runs:
   using: "composite"
   steps:
-      # - name: Install iOS 12.4 Runtime
-      #   run: |
-      #     gem install xcode-install
-      #     xcversion simulators --install='iOS 12.4'
-      #   shell: bash
       - name: size of directory
         run: |
           echo 'helloworld'
+        shell: bash
+      - name: Install iOS 12.4 Runtime
+        run: |
+          gem install xcode-install
+          xcversion simulators --install='iOS 12.4'
         shell: bash
       # - name: size of directory
       #   run: |
