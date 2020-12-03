@@ -2,13 +2,6 @@ on: [push]
 
 jobs:
   hello_world_job:
-    runs-on: ubuntu-latest
-    name: A job to say hello
+    runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@v2
-    - id: foo
-      uses: louiscklaw/ios12-runtime-install-action-tryout@master
-      with:
-        who-to-greet: 'Mona the Octocat'
-    - run: echo random-number ${{ steps.foo.outputs.random-number }}
-      shell: bash
+    - uses: louiscklaw/ios12-runtime-install-action-tryout@master

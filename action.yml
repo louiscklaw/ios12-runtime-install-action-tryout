@@ -1,21 +1,18 @@
 name: 'Hello World'
 description: 'Greet someone'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-outputs:
-  random-number:
-    description: "Random number"
-    value: ${{ steps.random-number-generator.outputs.random-id }}
 runs:
   using: "composite"
   steps:
-    - run: echo Hello ${{ inputs.who-to-greet }}.
-      shell: bash
-    - id: random-number-generator
-      run: echo "::set-output name=random-id::$(echo $RANDOM)"
-      shell: bash
-    - run: ${{ github.action_path }}/goodbye.sh
-      shell: bash
+      - name: Install iOS 12.4 Runtime
+        run: |
+          gem install xcode-install
+          xcversion simulators --install='iOS 12.4'
+      - name: size of directory
+        run: |
+          du -sh /Users/runner/Library/Caches/XcodeInstall/com.apple.pkg.iPhoneSimulatorSDK12_4
+      - name: size of directory
+        run: |
+          du -sh /usr/local/lib/ruby/gems/2.7.0
+      - name: size of directory
+        run: |
+          du -sh ~/Library/Caches/Homebrew
