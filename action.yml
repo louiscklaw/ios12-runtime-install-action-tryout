@@ -10,7 +10,7 @@ runs:
         shell: bash
       - name: size of directory
         run: |
-          du -sh /Users/runner/Library/Caches/XcodeInstall/com.apple.pkg.iPhoneSimulatorSDK12_4
+          echo 'helloworld'
         shell: bash
       - name: size of directory
         run: |
@@ -20,7 +20,8 @@ runs:
         run: |
           du -sh ~/Library/Caches/Homebrew
         shell: bash
+
       - name: size of directory
         run: |
-          echo 'helloworld'
+          du -sh /Users/runner/Library/Caches/XcodeInstall/com.apple.pkg.iPhoneSimulatorSDK12_4
         shell: bash
