@@ -2,6 +2,6 @@ on: [push]
 
 jobs:
   hello_world_job:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: louiscklaw/ios12-runtime-install-action-tryout@master

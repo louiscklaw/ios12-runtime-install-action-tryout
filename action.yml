@@ -3,16 +3,19 @@ description: 'Greet someone'
 runs:
   using: "composite"
   steps:
-      - name: Install iOS 12.4 Runtime
-        run: |
-          gem install xcode-install
-          xcversion simulators --install='iOS 12.4'
+      # - name: Install iOS 12.4 Runtime
+      #   run: |
+      #     gem install xcode-install
+      #     xcversion simulators --install='iOS 12.4'
+      # - name: size of directory
+      #   run: |
+      #     du -sh /Users/runner/Library/Caches/XcodeInstall/com.apple.pkg.iPhoneSimulatorSDK12_4
+      # - name: size of directory
+      #   run: |
+      #     du -sh /usr/local/lib/ruby/gems/2.7.0
+      # - name: size of directory
+      #   run: |
+      #     du -sh ~/Library/Caches/Homebrew
       - name: size of directory
         run: |
-          du -sh /Users/runner/Library/Caches/XcodeInstall/com.apple.pkg.iPhoneSimulatorSDK12_4
-      - name: size of directory
-        run: |
-          du -sh /usr/local/lib/ruby/gems/2.7.0
-      - name: size of directory
-        run: |
-          du -sh ~/Library/Caches/Homebrew
+          echo 'helloworld'
