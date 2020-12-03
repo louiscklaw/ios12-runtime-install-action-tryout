@@ -19,3 +19,4 @@ runs:
       - name: size of directory
         run: |
           echo 'helloworld'
+        shell: bash
